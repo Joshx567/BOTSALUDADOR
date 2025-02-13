@@ -1,19 +1,78 @@
 <!DOCTYPE html>
 <html xml:lang="es">
   <head>
-    <title>Sumador</title>
+    <title>Saludador</title>
   </head>
   <body>
-    <h1>Sumador</h1>
-    <form id="sumar-form">
-      <label for="primer-numero">Primer número:</label>
-      <input type="number" id="primer-numero" />
-      <label for="segundo-numero">Segundo número:</label>
-      <input type="number" id="segundo-numero" />
-      <input type="submit" value="Sumar" id="sumar-button" />
-    </form>
-    <div id="resultado-div"></div>
-
+    <h1>Boton Saludar</h1>
+    <div id="resultado-saludar"></div>
     <script type="module" src="./src/presenter.js"></script>
-  </body>
+    <form id="saludar-form">
+      <input type="submit" value="Saludar" id="saludar-button" /> 
+    </form>
+    <h1></h1>
+
+    <form id="nombre-form">
+      <label for="nombre">Digite su nombre:</label>
+      <input type="text" id="nombre" />
+      <input type="submit" value="Subir nombre" id="nombre-button" />
+    </form>
+    <div id="resultado-nombre"></div>
+    <script type="module" src="./src/presenter.js"></script>
+
+    <h1></h1>
+    
+    <form id="hora-form">
+      <!-- <input type="submit" value="Saludar por la hora actual" id="nombre-button" /> -->
+      <button type="submit" id="hora-button"> Saludar por la hora actual</button>
+    </form>
+    
+    <div id="resultado-hora"></div>
+    <script type="module" src="./src/presenter.js"></script>
+    <h1></h1>
+    
+    <form id="name-gender-form">
+      <label for="nombre">Digite su nombre:</label>
+      <input type="text" id="nombre-gender" />
+      <label for="nombre">Elija su genero:</label>
+      <select id="genero">
+        <option value="femenino">Femenino</option>
+        <option value="masculino">Masculino</option>
+      </select>
+      <input type="submit" value="Subir datos" id="name-gender-button" />
+    </form>
+
+    <div id="resultado-genero"></div>
+    <script type="module" src="./src/presenter.js"></script>
+
+    <h1></h1>
+
+    <form id="age-form">
+      <label for="nombre">Digite su nombre:</label>
+      <input type="text" id="nombre-gender2" />
+      <label for="nombre">Eliga su genero:</label>
+      <select id="genero2">
+        <option value="femenino">Femenino</option>
+        <option value="masculino">Masculino</option>
+      </select>
+      <label for="nombre">Digite su edad:</label>
+      <input type="text" id="edad" />
+      <input type="submit" value="Subir datos" id="age-button" />
+    </form>
+
+    <h1></h1>
+
+    <form id="lenguaje-form">
+      <label for="nombre">Eliga el idioma:</label>
+      <select id="idioma">
+        <option value="spanish">Spanish</option>
+        <option value="english">English</option>
+      </select>
+      <input type="submit" value="Subir idioma" id="language-button" />
+    </form>
+
+    <div id="resultado-lenguaje"></div>
+    <script type="module" src="./src/presenter.js"></script>
+
+  </body>	
 </html>

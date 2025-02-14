@@ -4,7 +4,7 @@
     <title>Saludador</title>
   </head>
   <body>
-    <h1>Boton Saludar</h1>
+    <h4>Boton Saludar</h4>
     <div id="resultado-saludar"></div>
     <script type="module" src="./src/presenter.js"></script>
     <form id="saludar-form">
@@ -32,9 +32,9 @@
     <h1></h1>
     
     <form id="name-gender-form">
-      <label for="nombre">Digite su nombre:</label>
+      <label for="nombre-gender">Digite su nombre:</label>
       <input type="text" id="nombre-gender" />
-      <label for="nombre">Elija su genero:</label>
+      <label for="genero">Elija su genero:</label>
       <select id="genero">
         <option value="femenino">Femenino</option>
         <option value="masculino">Masculino</option>
@@ -48,22 +48,25 @@
     <h1></h1>
 
     <form id="age-form">
-      <label for="nombre">Digite su nombre:</label>
+      <label for="nombre-gender2">Digite su nombre:</label>
       <input type="text" id="nombre-gender2" />
-      <label for="nombre">Eliga su genero:</label>
+      <label for="genero2">Eliga su genero:</label>
       <select id="genero2">
         <option value="femenino">Femenino</option>
         <option value="masculino">Masculino</option>
       </select>
-      <label for="nombre">Digite su edad:</label>
+      <label for="edad">Digite su edad:</label>
       <input type="text" id="edad" />
       <input type="submit" value="Subir datos" id="age-button" />
     </form>
 
+    <div id="resultado-edad"></div>
+    <script type="module" src="./src/presenter.js"></script>
+
     <h1></h1>
 
     <form id="lenguaje-form">
-      <label for="nombre">Eliga el idioma:</label>
+      <label for="idioma">Eliga el idioma:</label>
       <select id="idioma">
         <option value="spanish">Spanish</option>
         <option value="english">English</option>
@@ -72,6 +75,29 @@
     </form>
 
     <div id="resultado-lenguaje"></div>
+    <script type="module" src="./src/presenter.js"></script>
+
+    <h2>Boton saludar implementando los requisitos anteriores:</h2 >
+
+    <form id="complete-form">
+      <label for="nombre-gender7">Digite su nombre:</label>
+      <input type="text" id="nombre-gender7" />
+      <label for="genero7">Eliga su genero:</label>
+      <select id="genero7">
+        <option value="femenino">Femenino</option>
+        <option value="masculino">Masculino</option>
+      </select>
+      <label for="edad7">Digite su edad:</label>
+      <input type="text" id="edad7" />
+      <label for="idioma7">Eliga el idioma:</label>
+      <select id="idioma7">
+        <option value="spanish">Spanish</option>
+        <option value="english">English</option>
+      </select>
+      <input type="submit" value="Subir datos" id="complete-button" />
+    </form>
+
+    <div id="resultado-formulario-completo"></div>
     <script type="module" src="./src/presenter.js"></script>
 
   </body>	

@@ -1,4 +1,4 @@
-function obtenerSaludoIdioma(edad, genero) {
+function obtenerSaludoIdioma(lenguaje) {
     
     if(lenguaje == "spanish")
         {

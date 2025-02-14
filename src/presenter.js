@@ -41,14 +41,14 @@ form4.addEventListener("submit", (event) => {
   const nombregen = document.querySelector("#nombre-gender").value;
   const genero = document.querySelector("#genero").value;
   
-  div4.innerHTML = `<p>Hola ${nombregen} de genero: ${genero} </p>`;
+  div4.innerHTML = `<p>Hola ${nombregen} de género: ${genero} </p>`;
 });
 
 form5.addEventListener("submit", (event) => {
   event.preventDefault();
   const nombre = document.querySelector("#nombre-gender2").value;
   const genero = document.querySelector("#genero2").value;
-  const edad = document.querySelector("#edad").value;
+  const edad = parseInt(document.querySelector("#edad").value, 10);
   if(edad>30)
   {
     div5.innerHTML = "<p>Hola " + obtenerEdad(edad, genero) +  nombre + " de genero: " + genero + "</p>";
@@ -62,20 +62,17 @@ form5.addEventListener("submit", (event) => {
 
 form6.addEventListener("submit", (event) => {
   event.preventDefault();
-
   const idioma = document.querySelector("#idioma").value;
   div6.innerHTML = "<p>" + obtenerSaludoIdioma(idioma) + "</p>";
 });
 
 form7.addEventListener("submit", (event) => {
   event.preventDefault();
-
   const nombre = document.querySelector("#nombre-gender7").value;
   const genero = document.querySelector("#genero7").value;
-  const edad = document.querySelector("#edad7").value;
+  const edad = parseInt(document.querySelector("#edad7").value, 10);
   const idioma = document.querySelector("#idioma7").value;
-  
-  let hora = new Date().getHours(); // Obtiene la hora actual del PC
+  const hora = new Date().getHours(); // Obtiene la hora actual del PC
 
-  div7.innerHTML = "<p>" + SaludoCompleto(nombre,genero, edad, idioma, hora) + "</p>";
+  div7.innerHTML = "<p>" + SaludoCompleto(nombre, genero, edad, idioma, hora) + "</p>";
 });
